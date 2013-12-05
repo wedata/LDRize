@@ -1,10 +1,8 @@
-# template
+# LDRize
 
-[![Build Status](https://travis-ci.org/wedata/template.png?branch=master)](https://travis-ci.org/wedata/template)
+[![Build Status](https://travis-ci.org/wedata/LDRize.png?branch=master)](https://travis-ci.org/wedata/LDRize)
 
-- a template for wedata/database
-- Fork it to create a new database
-- You must edit this README.md, package.json and items.json.
+SITEINFOs for LDRize
 
 ## Data Scheme
 
