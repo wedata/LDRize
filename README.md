@@ -6,6 +6,8 @@ SITEINFOs for LDRize
 
 ## Data Scheme
 
+[silog - script/LDRize](http://white.s151.xrea.com/wiki/index.php?script%2FLDRize#ya376881)
+
 ## Contributing
 
 1. Fork it.
