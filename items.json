@@ -1,7 +1,33 @@
 [
 {
-  "name" : "",
+  "name" : "Tumblr Dashboard(etc.)",
   "data" : {
+    "name"       : "Tumblr",
+    "paragraph"  : "id(\"posts\")/li[div[starts-with(@id, \"post_\")]]",
+    "domain"     : "^https?://www\\.tumblr\\.com/(?:d(?:ashboard|rafts)|filter|like(?:s|d)|popular|queue|show|t(?:witter|agged)|blog)",
+    "height"     : "0",
+    "link"       : "./ancestor-or-self::li[starts-with(normalize-space(@class), \"post\")]//a[starts-with(@id,\"permalink_\")]",
+    "exampleUrl" : "https://www.tumblr.com/dashboard"
+  }
+},
+{
+  "name" : "Tumblr iPhone",
+  "data" : {
+    "name"       : "Tumblr iPhone",
+    "paragraph"  : "id(\"posts\")/li[contains(concat(\" \",normalize-space(@class),\" \"),\" post \") and not(contains(concat(\" \",normalize-space(@class),\" \"),\" controls \"))]",
+    "domain"     : "^https?://www\\.tumblr\\.com/iphone",
+    "link"       : ".//a[contains(concat(\" \",normalize-space(@class),\" \"), \" permalink \")]",
+    "exampleUrl" : "https://www.tumblr.com/iphone"
+  }
+},
+{
+  "name" : "Tumblr followers and following",
+  "data" : {
+    "name"       : "Tumblr followers and following",
+    "paragraph"  : "id(\"following follower\")[self::ul]/li",
+    "domain"     : "^https?://www\\.tumblr\\.com/follow(?:ers|ing)",
+    "link"       : "./a",
+    "exampleUrl" : "https://www.tumblr.com/followers"
   }
 }
 ]
